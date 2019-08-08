@@ -1,0 +1,14 @@
+//
+//  CoverageConfig.xcconfig
+//  AICamera-ObjC
+//
+//  Created by chrisroman on 8/4/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+COVERAGE_LDFLAGS = -fprofile-instr-generate -fcoverage-mapping
+COVERAGE_CFLAGS = -fprofile-instr-generate -fcoverage-mapping -DENABLE_COVERAGE_PROFILING=1
+COVERAGE_CPLUSPLUSFLAGS = -fprofile-instr-generate -fcoverage-mapping -DENABLE_COVERAGE_PROFILING=1
+COVERAGE_SWIFT_FLAGS = -profile-coverage-mapping -profile-generate -D ENABLE_COVERAGE_PROFILING
+COVERAGE_LD_GENERATE_MAP_FILE = YES
